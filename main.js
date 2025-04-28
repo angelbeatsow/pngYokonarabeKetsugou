@@ -32,7 +32,7 @@ function updateCanvas(){
     let num = Number(i + "");
     let _img = images[num];
     ctx.drawImage(_img,startXPoint,0);
-    startXPoint += _img.width +1;
+    startXPoint += _img.width ;
   }
 }
 
