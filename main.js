@@ -39,6 +39,7 @@ function updateCanvas(){
 document.getElementById("clearButton").onclick = ()=>{
   images = [];
   updateCanvas();
+  document.getElementById("input").value = "";
 };
 
 document.getElementById("dlButton").onclick=()=>{
