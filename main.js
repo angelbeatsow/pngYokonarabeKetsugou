@@ -43,10 +43,18 @@ document.getElementById("clearButton").onclick = ()=>{
 };
 
 document.getElementById("dlButton").onclick=()=>{
+  if(canvas.width == 0 || canvas.height == 0){
+    window.alert("画像を追加してください");
+    return;
+  }
+  if(document.getElementById("textInput").value == ""){
+    window.alert("ファイル名を指定してください");
+    return;
+  }
     const a = document.createElement("a");
     a.href = canvas.toDataURL("image/png", 1);
     let _name = document.getElementById("textInput").value;
-    if(_name == "")_name = "pngKetsugou";
+    //if(_name == "")_name = "pngKetsugou";
     a.download = _name + ".png";
     a.click();
 };
