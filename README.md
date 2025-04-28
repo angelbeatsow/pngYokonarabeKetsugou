@@ -1,1 +1,3 @@
 # pngYokonarabeHozon
+
+アニメーション用のpng画像を作る時に使う用のツール
