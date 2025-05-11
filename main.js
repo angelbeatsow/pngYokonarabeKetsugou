@@ -13,6 +13,7 @@ document.getElementById("input").addEventListener("change",(event)=>{
   _img.onload = ()=>{
     images.push(_img);
     updateCanvas();
+    document.getElementById("input").value = null;
   };
 });
 
